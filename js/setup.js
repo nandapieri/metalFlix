@@ -1,19 +1,19 @@
-$('.owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:false,
-    video:true,
-        lazyLoad:true,
+    $('.owl-carousel').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:false,
         center:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
+        videoWidth: true,
+        videoHeight: true,
+        responsive:{
+            480:{
+                items:2
+            },
+            600:{
+                items:4
+            }
         }
-    }
-})
+    })
